@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Vazirmatn", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Custom scrollbars for a clean workspace feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
+}
+
+body {
+  background-color: #030712;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+}
+
+/* Glass preset and glowing design effects */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.maplibre-gl-custom {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Smooth fade and glow effects */
+.animate-glow {
+  animation: border-glow 4s ease-in-out infinite alternate;
+}
+
+@keyframes border-glow {
+  0% {
+    border-color: rgba(0, 179, 164, 0.15);
+    box-shadow: 0 0 10px rgba(0, 179, 164, 0.05);
+  }
+  100% {
+    border-color: rgba(0, 179, 164, 0.45);
+    box-shadow: 0 0 20px rgba(0, 179, 164, 0.2);
+  }
+}

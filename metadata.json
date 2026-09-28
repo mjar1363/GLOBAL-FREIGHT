@@ -1,0 +1,6 @@
+{
+  "name": "Iran Road Transit Atlas",
+  "description": "اطلس شبکه جاده‌ای و راه‌های زمینی منتهی به ایران با مسیریابی تعاملی، ترانزیت‌یاب هوشمند و تحلیل داده‌های گمرکی مرزها",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
